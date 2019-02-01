@@ -1,0 +1,17 @@
+{
+    "cleanFiles" : {
+        "src": "dist/scss/*"
+    },
+    "concatFiles": {
+        "src": [
+            "src/scss/variables/variables.scss",
+            "src/scss/base.scss"
+        ],
+        "dest": "dist/scss",
+        "file": "example.scss"
+    },
+    "sassFiles": {
+        "src": "dist/scss/*.scss",
+        "dest": "dist/css"
+    }
+}

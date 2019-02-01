@@ -1,0 +1,10 @@
+body header,
+body footer {
+  background-color: #eeeeee; }
+
+body section {
+  background-color: #620671;
+  padding: 0.5em; }
+
+body div {
+  background-color: #eeeeee; }

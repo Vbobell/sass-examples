@@ -1,0 +1,28 @@
+//Variables in to SASS is much util for reuse the CSS rule value.
+//For declare variable utilize prefix $ and your name, after declare, define the value.
+//Bg colors
+    $container-primary-bg-color: #eeeeee;
+    $container-secundary-bg-color: #620671;
+
+    $content-primary-bg-color: #eeeeee;
+    $content-secundary-bg-color: #542424;
+//Bg colors
+
+//padding
+    $container-padding-sm: 0.5em;
+//padding
+// To use variable utilize prefix $ and name declared.
+body {
+    header, 
+    footer {
+        background-color: $container-primary-bg-color;
+    }
+    section {
+        background-color: $container-secundary-bg-color;
+        padding: $container-padding-sm;
+    }
+
+    div {
+        background-color: $content-primary-bg-color;
+    }
+}
