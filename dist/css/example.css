@@ -14,3 +14,11 @@ div {
   padding: 0.5em;
   background-color: #ffffff;
   color: #222222; }
+
+#page {
+  display: grid;
+  grid-template-columns: 100%; }
+  #page #header {
+    padding: 0.5em; }
+  #page #footer {
+    padding: 0.5em; }

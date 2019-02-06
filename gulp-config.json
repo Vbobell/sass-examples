@@ -5,7 +5,8 @@
     "concatFiles": {
         "src": [
             "src/scss/variables.scss",
-            "src/scss/base.scss"
+            "src/scss/base.scss",
+            "src/scss/layout.scss"
         ],
         "dest": "dist/scss",
         "file": "example.scss"
