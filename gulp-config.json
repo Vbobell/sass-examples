@@ -4,7 +4,7 @@
     },
     "concatFiles": {
         "src": [
-            "src/scss/variables/variables.scss",
+            "src/scss/variables.scss",
             "src/scss/base.scss"
         ],
         "dest": "dist/scss",
