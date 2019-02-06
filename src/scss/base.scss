@@ -1,15 +1,19 @@
 // To use variable utilize prefix $ and name declared.
 body {
-    header, 
-    footer {
-        background-color: $container-primary-bg-color;
-    }
-    section {
-        background-color: $container-secundary-bg-color;
-        padding: $container-padding-sm;
-    }
+    margin: $not-margin;
+}
+header, 
+footer {
+    background-color: $primary-bg-color;
+}
+section {
+    padding: $padding-1;
+    background-color: $secundary-bg-color;
+    color: $secundary-color;
+}
 
-    div {
-        background-color: $content-primary-bg-color;
-    }
+div {
+    padding: $padding-1;
+    background-color: $ternary-bg-color;
+    color: $primary-color;
 }

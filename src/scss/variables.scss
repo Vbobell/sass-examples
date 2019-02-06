@@ -30,22 +30,3 @@
         $link-hover-primary-color: #542424;
     // Font color
 //Text rules
-// To use variable utilize prefix $ and name declared.
-body {
-    margin: $not-margin;
-}
-header, 
-footer {
-    background-color: $primary-bg-color;
-}
-section {
-    padding: $padding-1;
-    background-color: $secundary-bg-color;
-    color: $secundary-color;
-}
-
-div {
-    padding: $padding-1;
-    background-color: $ternary-bg-color;
-    color: $primary-color;
-}

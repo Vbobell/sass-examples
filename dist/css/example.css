@@ -1,10 +1,16 @@
-body header,
-body footer {
+body {
+  margin: 0; }
+
+header,
+footer {
   background-color: #eeeeee; }
 
-body section {
+section {
+  padding: 0.5em;
   background-color: #620671;
-  padding: 0.5em; }
+  color: #eeeeee; }
 
-body div {
-  background-color: #eeeeee; }
+div {
+  padding: 0.5em;
+  background-color: #ffffff;
+  color: #222222; }
