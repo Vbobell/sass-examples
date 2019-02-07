@@ -1,0 +1,11 @@
+// Mixin are declaration group the rules code, is easy it's reutilize and help economize codes.
+@mixin border-define($size, $type, $color, $radius) {
+    border: $size $type $color;
+    border-radius: $radius;
+}
+
+@mixin box-shadow-define($rule) {
+    -webkit-box-shadow: $rule;
+    -moz-box-shadow: $rule;
+    box-shadow: $rule;
+}
