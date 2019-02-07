@@ -1,13 +1,14 @@
 {
   "name": "sass-examples",
   "version": "1.0.0",
-  "description": "Project to sass + gulp examples",
+  "description": "Project to sass + smacss + gulp examples",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "sass",
+    "smacss",
     "gulp",
     "example"
   ],
