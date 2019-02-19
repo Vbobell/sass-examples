@@ -80,9 +80,10 @@ div {
         padding: $padding-1;
     }
 }
+// To use mixin use property @include and name declared, if there parameters, declare between ().
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: $width-12;
     @include border-define(2px, solid, #eeeeee, 0px);
 }
