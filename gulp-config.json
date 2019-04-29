@@ -16,5 +16,9 @@
     "sassFiles": {
         "src": "build/scss/*.scss",
         "dest": "dist/css"
+    },
+    "copyIndex": {
+        "src": "src/html/index.html",
+        "dest": "dist/"
     }
 }

@@ -19,5 +19,15 @@ gulp.task('sass', async () => {
     });
 });
 
-gulp.task('default', gulp.series('sass'));
+gulp.task('copy-index', async () => {
+    await new Promise( async (resolve, reject) => {
+        gulp.src(gulpConfig.copyIndex.src)
+        .pipe(gulp.dest(gulpConfig.copyIndex.dest));
+
+        return resolve();
+    });
+});
+
+
+gulp.task('default', gulp.series('sass', 'copy-index'));
 
