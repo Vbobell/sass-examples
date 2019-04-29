@@ -10,11 +10,11 @@
             "src/scss/layout.scss",
             "src/scss/module.scss"
         ],
-        "dest": "dist/scss",
+        "dest": "build/scss",
         "file": "example.scss"
     },
     "sassFiles": {
-        "src": "dist/scss/*.scss",
+        "src": "build/scss/*.scss",
         "dest": "dist/css"
     }
 }
