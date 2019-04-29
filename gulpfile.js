@@ -1,21 +1,11 @@
 const gulp = require('gulp');
 const gulpSass = require('gulp-sass');
-const gulpClean = require('gulp-clean');
 const gulpConcat = require('gulp-concat');
 const fs = require('fs');
 
 const gulpConfig = JSON.parse(fs.readFileSync("gulp-config.json"));
 
 gulpSass.compiler = require('node-sass');
-
-gulp.task('clean',async () => {
-    await new Promise((resolve, reject) => {
-        gulp.src(gulpConfig.cleanFiles.src, {read: false})
-        .pipe(gulpClean());
-
-        return resolve();
-    });
-});
 
 gulp.task('concat', async () => {
     await new Promise( async (resolve, reject) => {
@@ -37,5 +27,5 @@ gulp.task('sass', async () => {
     });
 });
 
-gulp.task('default', gulp.series('clean', 'concat', 'sass'));
+gulp.task('default', gulp.series('concat', 'sass'));
 
