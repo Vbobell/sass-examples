@@ -7,27 +7,17 @@ const gulpConfig = JSON.parse(fs.readFileSync("gulp-config.json"));
 
 gulpSass.compiler = require('node-sass');
 
-gulp.task('sass', async () => {
-    await new Promise( async (resolve, reject) => {
-        gulp.src(gulpConfig.concatFiles.src)
-        .pipe(gulpConcat(gulpConfig.concatFiles.file))
-        .pipe(gulp.dest(gulpConfig.concatFiles.dest))
-        .pipe(gulpSass().on('error', gulpSass.logError))
-        .pipe(gulp.dest(gulpConfig.sassFiles.dest));
-
-        return resolve();
-    });
+gulp.task('sass', () => {
+    return gulp.src(gulpConfig.concatFiles.src)
+    .pipe(gulpConcat(gulpConfig.concatFiles.file))
+    .pipe(gulp.dest(gulpConfig.concatFiles.dest))
+    .pipe(gulpSass().on('error', gulpSass.logError))
+    .pipe(gulp.dest(gulpConfig.sassFiles.dest));
 });
 
-gulp.task('copy-index', async () => {
-    await new Promise( async (resolve, reject) => {
-        gulp.src(gulpConfig.copyIndex.src)
+gulp.task('copy-index', () => {
+        return gulp.src(gulpConfig.copyIndex.src)
         .pipe(gulp.dest(gulpConfig.copyIndex.dest));
-
-        return resolve();
-    });
 });
 
-
-gulp.task('default', gulp.series('sass', 'copy-index'));
-
+gulp.task('default', gulp.series('copy-index', 'sass'));
