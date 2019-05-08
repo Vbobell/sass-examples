@@ -9,3 +9,14 @@
     -moz-box-shadow: $rule;
     box-shadow: $rule;
 }
+
+@mixin font-ubuntu($size) {
+    font-family: $font-ubuntu;
+    font-size: $size;
+}
+
+@mixin font-style($size, $color, $weight) {
+    color: $color;
+    font-size: $font-size-em-2;
+    font-weight: $weight;
+}

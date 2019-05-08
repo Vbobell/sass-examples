@@ -1,18 +1,32 @@
 // To use mixin use property @include and name declared, if there parameters, declare between ().
+.header {
+    h1 {
+        @include font-style($font-size-em-2, $secundary-color, normal);
+    }
+}
+
 .container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: $width-12;
     @include border-define(2px, solid, #eeeeee, 0px);
-}
 
-.container .item {
-    width: $width-12;
-    @include box-shadow-define(0px 0px 15px 0px rgba(0,0,0,0.52));
+    .item {
+        width: $width-12;
+        @include box-shadow-define(0px 0px 15px 0px rgba(0,0,0,0.52));
+
+        &:not(:last-child) {
+            margin: $margin-bottom-1;
+        }
+    }
 }
 
 @media all and (min-width:992px) {
     .container .item {
         width: $width-3;
+        &:not(:last-child) {
+            margin: $not-margin;
+        }
     }
 }

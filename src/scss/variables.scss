@@ -7,12 +7,16 @@
         $width-2: 16.66%;
         $width-3: 25%;
         $width-12: 100%;
+
+        $font-size-em-1: 1em;
+        $font-size-em-2: 1.2em;
     //width
     //padding
-        $padding-1: 0.5em; 
+        $padding-all-1: 0.5em; 
     //padding
     //margin
         $not-margin: 0;
+        $margin-bottom-1: 0 0 10px 0;
     //margin
 //Box rules
 
@@ -21,10 +25,15 @@
         $primary-bg-color: #eeeeee;
         $secundary-bg-color: #620671;
         $ternary-bg-color: #ffffff;
+
+        $black-bg-color: #222222;
     //Bg colors
 //Background rules
 
 //Text rules
+    // Font face
+        $font-ubuntu: 'Ubuntu', sans-serif;
+    // Font face
     // Font color
         $primary-color: #222222;
         $secundary-color: #eeeeee;

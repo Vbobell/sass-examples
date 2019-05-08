@@ -1,19 +1,22 @@
 // To use variable utilize prefix $ and name declared.
 body {
     margin: $not-margin;
+    @include font-ubuntu($font-size-em-1);
 }
-header, 
+header,
 footer {
-    background-color: $primary-bg-color;
+    background-color: $black-bg-color;
+    @include font-style($font-size-em-1, $secundary-color, normal);
+    text-align: center;
 }
 section {
-    padding: $padding-1;
+    padding: $padding-all-1;
     background-color: $secundary-bg-color;
     color: $secundary-color;
 }
 
 div {
-    padding: $padding-1;
+    padding: $padding-all-1;
     background-color: $ternary-bg-color;
     color: $primary-color;
 }

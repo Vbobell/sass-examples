@@ -4,6 +4,7 @@
     },
     "concatFiles": {
         "src": [
+            "src/scss/fonts.scss",
             "src/scss/variables.scss",
             "src/scss/mixins.scss",
             "src/scss/base.scss",

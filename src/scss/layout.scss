@@ -5,7 +5,7 @@
     grid-template-columns: $width-12;
     
     #header {
-        padding: $padding-1;
+        padding: $padding-all-1;
     }
 
     #main {
@@ -13,6 +13,6 @@
     }
 
     #footer {
-        padding: $padding-1;
+        padding: $padding-all-1;
     }
 }
