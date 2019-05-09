@@ -6,13 +6,25 @@
         $width-1: 8.33%;
         $width-2: 16.66%;
         $width-3: 25%;
+        $width-4: 33.33%;
+        $width-5: 41.66%;
+        $width-6: 50%;
+        $width-7: 58.33%;
+        $width-8: 66.66%;
+        $width-9: 75%;
+        $width-10: 83.33%;
+        $width-11: 91.66%;
         $width-12: 100%;
+
+        $container-max-width: 992px;
 
         $font-size-em-1: 1em;
         $font-size-em-2: 1.2em;
     //width
     //padding
-        $padding-all-1: 0.5em; 
+        $padding-all-1: 0.5em;
+        $padding-top-bottom-1: 0.5em 0;
+        $padding-top-bottom-4: 2em 0;
     //padding
     //margin
         $not-margin: 0;

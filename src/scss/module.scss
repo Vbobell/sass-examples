@@ -10,10 +10,11 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: $width-12;
-    @include border-define(2px, solid, #eeeeee, 0px);
-
+    max-width: $container-max-width;
+    @include border-define(0px, solid, #eeeeee, 4px);
     .item {
         width: $width-12;
+        min-height: 100px;
         @include box-shadow-define(0px 0px 15px 0px rgba(0,0,0,0.52));
 
         &:not(:last-child) {

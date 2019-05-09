@@ -10,6 +10,8 @@
 
     #main {
         display: flex;
+        justify-content: center;
+        padding: $padding-top-bottom-4;
     }
 
     #footer {
